@@ -3,4 +3,8 @@ layout: post
 title: Move to github
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas sit amet metus. Nunc quam elit, posuere nec, auctor in, rhoncus quis, dui. Aliquam erat volutpat. Ut dignissim, massa sit amet dignissim cursus, quam lacus feugiat.
+I first heard about using GIT with SVN at last years PHPNW conference. After trying out git-svn for projects at work and seeing its feature base a speed over svn, git became the ideal version control for myself. Anyway cut to today and I've moved my blogging attempts to be managed by git itself, using the "pages.github.com":http://pages.github.com feature.
+
+The github pages hosting allows you to create a site in a templating language similar to Django (and various markdown languages), and then have its contents compiled into static pages. The compile step uses a Ruby script called "Jekyll":http://github.com/mojombo/jekyll, but you can also just upload standard static HTML pages. 
+
+Its interesting to see we have come full curcle in away as its space year 2010, and site creation using static pages is back.
