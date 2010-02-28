@@ -5,7 +5,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 */
 
 body {
-	background:  #FFFFFF url(images/bg01.jpg) repeat-x top left;
+	background:  #FFFFFF url(/images/bg01.jpg) repeat-x top left;
 	font-size: 13px;
 	color: #7F7F7F;
 }
