@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }} - GEPP</title>
+   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+
+<div id="header">
+    <div id="logo">
+        <h1><a href="/">GEPP</a></h1>
+        <p><a href="/">GIT, ERLANG, PHP, PYTHON</a></p>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://github.com/moobert">Code</a></li>
+        </ul>
+    </div>
+</div>
+<div id="page">
+    <div id="content">{{ content }}</div>
+    <div id="sidebar">
+        <ul>
+            <li>
+            <h2>Tags</h2>
+            <ul>
+                <li><a href="/git.html">git ({{ site.categories.git | size }})</a></li>
+                <li><a href="/php.html">php ({{ site.categories.php | size }})</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="footer">
+<p>&copy; 2010 All Rights Reserved. &nbsp;&bull;&nbsp; Design Inspired by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+</div>
+
+</body>
+</html>
