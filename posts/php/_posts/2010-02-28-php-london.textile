@@ -1,0 +1,14 @@
+---
+layout: post
+title: PHP London
+---
+
+Last Firday was the annal PHP London conference, "Pale Purple":http://www.palepurple.co.uk traveled down the same day (5:30 start - interesting times) and a part form getting stuck at tube station (with a cut down version of this ad "100% Pure New Zealand":http://www.youtube.com/watch?v=AqDvogkBuNk looping 1000s of times) it was a well worth the trek.
+
+Lots of great talks as normal, the ones I saw where:
+
+* "RDBMS in the social networks age":http://www.alberton.info/talks#talk-2 - Brilliant talk about maping tree data within "relational databases":http://www.postgresql.org/docs/8.4/static/queries-with.html. 
+* Database optimisation - Honest talk about the path to scaling; the take away was MySQL master/master, Memcached and "Beanstalkd":http://kr.github.com/beanstalkd.
+* "PHPillow & CouchDB & PHP":http://kore-nordmann.de/talks/10_02_phpuk_couchdb.pdf - Good introduction CouchDB, little more on Erlang would have been nice though.
+* "'In search of...' - integrating site search systems":http://www.slideshare.net/IanBarber/in-search-of-integrating-site-search - Great introduction to full text search.
+* PHP code audits - Interesting to see the business method within the whole process.
