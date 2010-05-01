@@ -1,0 +1,44 @@
+---
+layout: post
+title: Google Charts
+---
+
+I've resently started using the "Google Visualisation API":http://code.google.com/apis/ajax/playground/?type=visualization#column_chart. The API makes really nice interactve graphs and tables with JavaScript. I've made a quick example of the "pie chart visualization":/google.html which features popup labels upon slice selection and the pie chart pulling apart when a user clicks items in the legend.
+
+One key thing to note is the DataTable object which provides a typed way to store data - much like a spreadsheet. With the data in this typed format you can use the DataView object to select a sperifc part of your base data to visualize eg in "tables":http://code.google.com/apis/ajax/playground/?type=visualization#another_data_view and many types of "graphs":http://code.google.com/apis/ajax/playground/?type=visualization#scatter_chart.
+
+Another great feature of the API are the data formaters, like the "number formatter":http://code.google.com/apis/ajax/playground/?type=visualization#number_formatter which is able to change the display of items in tables and graph labels.
+
+Code for example:
+
+{% highlight javascript linenos %}
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Name');
+data.addColumn('number', 'Amount');
+data.addRows(2);
+data.setValue(0, 0, 'Does');
+data.setValue(0, 1, 75);
+data.setValue(1, 0, 'Does Not');
+data.setValue(1, 1, 25);
+
+var id = document.getElementById('visualization');
+if (id != null) {
+    var colours = [
+        {color:'#ffff00', darker:'#bdbb00'},
+        {color:'#993365', darker:'#672344'}
+    ];
+
+    var options = {
+        is3D: true,
+        title: 'Parts That Resemble Pac-Man',
+        width: 400,
+        height: 400,
+        colors: colours
+    }
+
+    var chart = new google.visualization.PieChart(id);
+    chart.draw(data, options);
+}
+{% endhighlight %}
+
+An example of this code running can be found "here":/google.html.
