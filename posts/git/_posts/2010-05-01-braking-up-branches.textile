@@ -3,7 +3,7 @@ layout: post
 title: braking up git branches
 ---
 
-I've resently needed to divide a branch into two parts. The process involved checking out at the commit to wished divide at and then creating a new branch at this point. The last step was then just a matter of renaming the new branches to fit the name scheme I wanted.
+I've recently needed to divide a branch into two parts. The process involved checking out at the commit at the point I wished to divide at and then creating a new branch at this point. The last step was then just a matter of renaming the new branches to fit the name scheme I wanted.
 
 One important thing to note is when doing this as mentioned in the guthub "rebase guide":http://learn.github.com/p/rebasing.html “do not rebase commits that you have pushed to a public repository” as when you make any changes to git's history as you are abandoning existing commits and creating new ones that are similar but still different.
 
