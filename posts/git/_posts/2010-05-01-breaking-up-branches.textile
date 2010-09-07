@@ -1,6 +1,6 @@
 ---
 layout: post
-title: braking up git branches
+title: breaking up git branches
 ---
 
 I've recently needed to divide a branch into two parts. The process involved checking out at the commit at the point I wished to divide at and then creating a new branch at this point. The last step was then just a matter of renaming the new branches to fit the name scheme I wanted.
